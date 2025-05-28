@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: antiquewhite;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 38px 151px 145px 93px;
+        grid-template-rows: 189px 105px 113px 20px;
+        background-color: black;
+        gap: 6px;
+        height: 445px;
+        width: 445px;
+      }
+      .orange-box {
+        background-color: #ec5423;
+        grid-column: span 2;
+        border-bottom: black solid 5px;
+      }
+      .white-box1 {
+        grid-column: span 2;
+        border-bottom: black solid 5px;
+      }
+      .white-box2 {
+        grid-column: span 2;
+        border-bottom: black solid 5px;
+      }
+      .white-box3 {
+        grid-column: span 2;
+        border-bottom: black solid 5px;
+      }
+      .yellow-box {
+        background-color: #d1c354;
+        grid-row: span 2;
+      }
+      .white-box4 {
+        grid-row: span 2;
+      }
+      .blue-box {
+        background-color: #26316e;
+        border-bottom: black solid 5px;
+      }
+      .white-box5 {
+        grid-row: span 2;
+      }
+      .white-box {
+        background-color: #e6ddd2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="orange-box"></div>
+      <div class="white-box white-box1"></div>
+      <div class="white-box white-box2"></div>
+      <div class="white-box white-box3"></div>
+      <div class="yellow-box"></div>
+      <div class="white-box white-box4"></div>
+      <div class="blue-box"></div>
+      <div class="white-box white-box5"></div>
+      <div class="white-box white-box6"></div>
+    </div>
+  </body>
+</html>
